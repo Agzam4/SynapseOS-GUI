@@ -1,0 +1,6 @@
+<svg viewBox="-3 -3 6 6" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<g>
+		<circle r="1" stroke-width="0" fill="#007FFF"></circle>
+		<circle r="2.5" stroke-width="1" stroke="#007FFF" fill="transparent"></circle>
+	</g>
+</svg>

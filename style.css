@@ -1,0 +1,268 @@
+html body {
+	width: 100vw;
+	height: 100vh;
+	overflow: hidden;
+	font-family: sans-serif;
+	padding: 0;
+	margin: 0;
+}
+
+html {
+	background: #333;
+}
+
+body {
+	/*background: linear-gradient(
+		315deg,
+		hsl(208deg 100% 50%) 0%,
+		hsl(228deg 81% 66%) 11%,
+		hsl(249deg 61% 67%) 22%,
+		hsl(272deg 49% 62%) 33%,
+		hsl(295deg 40% 57%) 44%,
+		hsl(315deg 50% 58%) 56%,
+		hsl(325deg 64% 58%) 67%,
+		hsl(332deg 77% 58%) 78%,
+		hsl(335deg 89% 57%) 89%,
+		hsl(333deg 100% 50%) 100%
+	);*/
+	background-image: linear-gradient(
+  315deg,
+  hsl(0deg 0% 0%) 1%,
+  hsl(226deg 30% 10%) 44%,
+  hsl(222deg 42% 17%) 53%,
+  hsl(219deg 50% 23%) 56%,
+  hsl(217deg 57% 30%) 58%,
+  hsl(215deg 64% 36%) 58%,
+  hsl(214deg 71% 42%) 58%,
+  hsl(212deg 81% 48%) 58%,
+  hsl(208deg 100% 50%) 59%,
+  hsl(230deg 78% 67%) 60%,
+  hsl(255deg 58% 66%) 61%,
+  hsl(280deg 46% 61%) 64%,
+  hsl(306deg 43% 57%) 68%,
+  hsl(322deg 59% 58%) 73%,
+  hsl(330deg 74% 58%) 80%,
+  hsl(335deg 88% 57%) 89%,
+  hsl(333deg 100% 50%) 100%
+);
+}
+
+:root {
+	--taskpanel-size: 5vh;
+}
+
+#taskpanel {
+	position: fixed;
+	display: block;
+	background: #222;
+	background: #00000099;
+	box-shadow: 0 0 var(--taskpanel-size) #00000077;
+	border-top: calc(var(--taskpanel-size) / 20) #FFFFFF11 solid;
+}
+
+#taskpanel[position="bottom"] {
+	width: 100vw;
+	height: var(--taskpanel-size);
+	bottom: 0;
+	left: 0;
+}
+
+#menu {
+	width: var(--taskpanel-size);
+	height: var(--taskpanel-size);
+	display: flex;
+	position: absolute;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+}
+
+#power-menu {
+	cursor: pointer;
+	position: absolute;
+	transform: scale(.6);
+	transition: .2s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+	z-index: 999;
+}
+
+#power-menu:hover {
+	transform: scale(.75);
+	/*filter: brightness(0) invert(1);*/
+}
+
+#powermenu-shadow {
+	pointer-events: none;
+	border-radius: 100%;
+	background: #000;
+	width: calc(var(--taskpanel-size) * 7);
+	height: calc(var(--taskpanel-size) * 7);
+	transition: .4s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+	z-index: 99;
+}
+
+#powermenu-shadow[isVisible="no"] {
+	position: absolute;
+	opacity: 0;
+	transform: scale(0);
+}
+
+#powermenu-shadow[isVisible="true"] {
+	position: absolute;
+	border-radius: 100%;
+	background: #000;
+	opacity: .7;
+	transform: scale(1.0);
+}
+
+#power-menu[isAcivated="true"] {
+}
+
+#power-menu:hover > * > * > * {
+	fill: #FFF;
+}
+
+.menu-ico, .menu-ico-border {
+	width: var(--taskpanel-size);
+	height: var(--taskpanel-size);
+	border-radius: 100%;
+}
+.menu-ico {
+	background: #0094FF;
+	transform: scale(.3);
+	transition: .2s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+}
+.menu-ico-border {
+	z-index: -1;
+	padding: calc(var(--taskpanel-size)/5);
+	border: calc(var(--taskpanel-size)/5) solid #0094FF;
+	margin: calc(var(--taskpanel-size)/-2.5);
+}
+
+.menu-ico:hover {
+	transform: scale(.45);
+}
+
+.power-menu-button-rotate {
+	position: absolute;
+	pointer-events: none;
+	width: 100%;
+	height: 100%;
+	z-index: 9999;
+}
+
+.power-menu-button {
+	cursor: pointer;
+	position: absolute;
+	transform: scale(0) translateY(0%);
+	transition: .2s cubic-bezier(0.18, 0.89, 0.32, 1.28);
+	pointer-events: none;
+	opacity: 0;
+	z-index: 9999;
+}
+
+.power-menu-button.big[isVisible="true"] {
+	pointer-events: auto;
+	transform: scale(1) translateY(-90%);
+	opacity: 1;
+}
+
+.power-menu-button.small[isVisible="true"] {
+	pointer-events: auto;
+	transform: scale(.75) translateY(-120%);
+	opacity: 1;
+	transition: .2s;
+}
+
+.power-menu-button[isVisible="no"] {
+	transition: .2s;
+	pointer-events: auto;
+	transform: scale(0) translateY(0%);
+	opacity: 0;
+	pointer-events: none;
+}
+
+
+.taskpanel-hideallframes {
+	height: var(--taskpanel-size);
+	width: calc(var(--taskpanel-size)/7);
+	right: 0;
+	background: #FFFFFF05;
+	border-left: #FFFFFF22 calc(var(--taskpanel-size)/20) solid;
+	transition: .2s ease-in-out;
+}
+
+.taskpanel-leftbox {
+	display: flex;
+	position: absolute;
+	height: var(--taskpanel-size);
+	right: 0;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+}
+
+.taskpanel-hideallframes:hover {
+	background: #FFFFFF11;
+}
+
+.taskpanel-timedate {
+	color: #EEE;
+	padding: 0 calc(var(--taskpanel-size)/5);
+	font-size: calc(var(--taskpanel-size)/3);
+	text-align: center;
+	height: var(--taskpanel-size);
+	display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+	transition: .2s ease-in-out;
+	user-select: none;
+}
+
+.taskpanel-timedate:hover {
+	background: #FFFFFF11;
+}
+
+
+/*.power-menu-button:before {
+	content: "";
+    position: absolute;
+	background: #0094FF;
+	top: calc(var(--taskpanel-size)*2);
+	left: 50%;
+	transform: translateX(-50%);
+	width: calc(var(--taskpanel-size)/10);
+	height: calc(var(--taskpanel-size));
+	opacity: 0;
+	transition: .2s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+}*/
+
+
+#synapse-backgroundtext {
+	position: fixed;
+	right: 25%;
+	top: 50%;
+	font-size: var(--taskpanel-size);
+	z-index: -1;
+	color: #EEE;
+	transform: translate(0, -50%);
+	user-select: none;
+	pointer-events: none;
+}
+
+.taskpanel-search {
+	position: absolute;
+	left: var(--taskpanel-size);
+	height: calc(var(--taskpanel-size) / 1.5);
+	border-radius: var(--taskpanel-size);
+	width: calc(var(--taskpanel-size)*5);
+	background: #FFFFFFEE;
+	box-shadow: 0 0 calc(var(--taskpanel-size) / 2) #00000033 inset;
+	color: #333;
+	outline: none;
+	margin: 0;
+	padding: 0 calc(var(--taskpanel-size) / 2);
+	display: flex;
+	align-content: center;
+	align-items: center;
+}

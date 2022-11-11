@@ -1,0 +1,9 @@
+<svg viewBox="-3 -3 6 6" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<g stroke="#007FFF" stroke-width=".5" fill="transparent" stroke-linejoin="round" stroke-linecap="round">
+		<path d="M0,-2.5 A 1 1, 0, 0, 1, 0,2.5" transform="rotate(-45 0 0)"></path>
+		<path d="M0,-2.5 A 1 1, 0, 0, 1, 0,2.5" transform="rotate(45 0 0)"></path>
+
+		<path d="M-1.768,-1.768 l1,0" transform="rotate(0 0 0)"></path>
+		<path d="M-1.768,-1.768 l0,-1" transform="rotate(0 0 0)"></path>
+	</g>
+</svg>

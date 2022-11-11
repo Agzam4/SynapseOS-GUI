@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>SynapseOS GUI</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script type="text/javascript" src="script.js"></script>
+</head>
+<body>
+	<div id="taskpanel" position="bottom">
+		<div id="synapse-backgroundtext">
+			SynapseOS
+		</div>
+		<div id="menu">
+			<svg id="power-menu" width="100%" height="100%">       
+     			<image class="powermenu-image" xlink:href="powermenu-ico.svg" src="powermenu-ico.svg" width="100%" height="100%"/>    
+			</svg>
+
+			<div id="powermenu-shadow" isVisible="no"></div>
+			<div class="power-menu-button-rotate" style="transform: rotate(5deg);">
+				<div class="power-menu-button big" style="transition-delay: .1s">
+					<svg width="100%" height="100%" style="transform: rotate(-5deg);">       
+     					<image class="powermenu-image" xlink:href="powermenu-power.svg" src="powermenu-power.svg" width="100%" height="100%"/>    
+					</svg>
+				</div>
+			</div>
+
+			<div class="power-menu-button-rotate" style="transform: rotate(45deg);">
+				<div class="power-menu-button small" style="transition-delay: .2s">
+					<svg width="100%" height="100%" style="transform: rotate(-45deg);">       
+     					<image class="powermenu-image" xlink:href="powermenu-sleep.svg" src="powermenu-sleep.svg" width="100%" height="100%"/>    
+					</svg>
+				</div>
+			</div>
+
+			<div class="power-menu-button-rotate" style="transform: rotate(85deg);">
+				<div class="power-menu-button small" style="transition-delay: .3s">
+					<svg width="100%" height="100%" style="transform: rotate(-85deg);">       
+     					<image class="powermenu-image" xlink:href="powermenu-reboot.svg" src="powermenu-reboot.svg" width="100%" height="100%"/>    
+					</svg>
+				</div>
+			</div>
+			<div class="taskpanel-search" contenteditable>Поиск</div>
+		</div>
+
+
+		<div class="taskpanel-leftbox">
+			<div class="taskpanel-timedate">12:00<br>01.01.1970</div>
+			<div class="taskpanel-hideallframes"></div>
+		</div>
+	</div>
+</body>
+</html>

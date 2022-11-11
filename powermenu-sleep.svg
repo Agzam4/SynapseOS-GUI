@@ -1,0 +1,13 @@
+<svg viewBox="-0 -0 6 6" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<!-- <circle r="1" stroke-width="0" fill="#007FFF"></circle> -->
+	<g stroke="#007FFF" stroke-width=".5" fill="transparent" stroke-linejoin="round" stroke-linecap="round">
+		<!-- <circle r="2.5" stroke-width="1" stroke="#007FFF" fill="transparent"></circle> -->
+		<!-- <path d="M0,-2.5 A 1 1, 0, 0, 1, 0,2.5 A.5 1, 0, 0, 0, 0,-2.5" transform="rotate(+30 0 0)"></path> -->
+		<path d="M2.625 .75 A2.25 2.25 0 1 0 5.25 4.125 A2.25 2.25 0 0 1 2.625 .75" transform="rotate(0 0 0)"></path>
+
+
+		<!-- <path d="M0,2.5 A 1 1, 0, 0, 1, 0,-2.5" transform="rotate(-40 0 0)"></path> -->
+		<!-- <path d="M0,0 L0,-2.5"></path> -->
+	</g>
+	<!-- transform: rotate(180deg) -->
+</svg>
