@@ -1,0 +1,81 @@
+<svg viewBox="-5 -5 10 10" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs>
+    	<linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+    		<!-- <stop offset="1%" stop-color="hsl(0deg 0% 0%)"/>
+
+    		<stop offset="44%"  stop-color="hsl(226deg 30% 10%) "/>
+			<stop offset="53%"  stop-color="hsl(222deg 42% 17%) "/>
+			<stop offset="56%"  stop-color="hsl(219deg 50% 23%) "/>
+			<stop offset="58%"  stop-color="hsl(217deg 57% 30%) "/>
+			<stop offset="58%"  stop-color="hsl(215deg 64% 36%) "/>
+			<stop offset="58%"  stop-color="hsl(214deg 71% 42%) "/>
+			<stop offset="58%"  stop-color="hsl(212deg 81% 48%) "/>
+			<stop offset="59%"  stop-color="hsl(208deg 100% 50%)"/>
+			<stop offset="60%"  stop-color="hsl(230deg 78% 67%) "/>
+			<stop offset="61%"  stop-color="hsl(255deg 58% 66%) "/>
+			<stop offset="64%"  stop-color="hsl(280deg 46% 61%) "/>
+			<stop offset="68%"  stop-color="hsl(306deg 43% 57%) "/>
+			<stop offset="73%"  stop-color="hsl(322deg 59% 58%) "/>
+			<stop offset="80%"  stop-color="hsl(330deg 74% 58%) "/>
+			<stop offset="89%"  stop-color="hsl(335deg 88% 57%) "/>
+			<stop offset="100%" stop-color="hsl(333deg 100% 50%)"/> -->
+
+			<!-- <stop offset="0%"  	stop-color="hsl(0deg 11% 25%)"/>
+			<stop offset="33%" 	stop-color="hsl(23deg 9% 50%)"/>
+			<stop offset="67%" 	stop-color="hsl(39deg 33% 71%)"/>
+			<stop offset="100%"	stop-color="hsl(50deg 84% 90%)"/>
+			<stop offset="0%"  	stop-color="hsl(0deg 11% 25%)"/>
+			<stop offset="33%" 	stop-color="hsl(23deg 9% 50%)"/>
+			<stop offset="67%" 	stop-color="hsl(39deg 33% 71%)"/>
+			<stop offset="100%"	stop-color="hsl(50deg 84% 90%)"/>
+			<stop offset="0%"  	stop-color="hsl(0deg 11% 25%)"/>
+			<stop offset="33%" 	stop-color="hsl(23deg 9% 50%)"/>
+			<stop offset="67%" 	stop-color="hsl(39deg 33% 71%)"/>
+			<stop offset="100%"	stop-color="hsl(50deg 84% 90%)"/>
+			<stop offset="0%"  	stop-color="hsl(0deg 11% 25%)"/>
+			<stop offset="33%" 	stop-color="hsl(23deg 9% 50%)"/>
+			<stop offset="67%" 	stop-color="hsl(39deg 33% 71%)"/>
+			<stop offset="100%"	stop-color="hsl(50deg 84% 90%)"/> -->
+		
+			<!-- <stop offset="0%  " stop-color="hsl(214deg 70% 75%) "/>
+			<stop offset="13% " stop-color="hsl(217deg 66% 76%) "/>
+			<stop offset="19% " stop-color="hsl(220deg 62% 77%) "/>
+			<stop offset="24% " stop-color="hsl(225deg 57% 78%) "/>
+			<stop offset="28% " stop-color="hsl(230deg 53% 79%) "/>
+			<stop offset="32% " stop-color="hsl(237deg 48% 80%) "/>
+			<stop offset="35% " stop-color="hsl(245deg 45% 80%) "/>
+			<stop offset="39% " stop-color="hsl(254deg 43% 80%) "/>
+			<stop offset="42% " stop-color="hsl(263deg 42% 79%) "/>
+			<stop offset="45% " stop-color="hsl(271deg 40% 78%) "/>
+			<stop offset="48% " stop-color="hsl(280deg 39% 78%) "/>
+			<stop offset="52% " stop-color="hsl(289deg 38% 77%) "/>
+			<stop offset="55% " stop-color="hsl(297deg 36% 77%) "/>
+			<stop offset="58% " stop-color="hsl(305deg 40% 77%) "/>
+			<stop offset="61% " stop-color="hsl(312deg 47% 78%) "/>
+			<stop offset="65% " stop-color="hsl(317deg 53% 79%) "/>
+			<stop offset="68% " stop-color="hsl(321deg 60% 79%) "/>
+			<stop offset="72% " stop-color="hsl(324deg 67% 80%) "/>
+			<stop offset="76% " stop-color="hsl(327deg 75% 80%) "/>
+			<stop offset="81% " stop-color="hsl(329deg 83% 81%) "/>
+			<stop offset="87% " stop-color="hsl(331deg 91% 81%) "/>
+			<stop offset="100%" stop-color="hsl(333deg 100% 82%)"/> -->
+
+			<stop offset="0%" 	stop-color="#007FFF"/>
+			<stop offset="100%" stop-color="#FF0072"/>
+    	</linearGradient>
+
+		<clipPath id="clippath" >
+			<path fill="#FFFFFF" stroke="#000000" d="M-5,-3 -5,3, 5,3 5,-3 3,-3 0,-3 -1,-4 -1,-4 -4,-4 Z"/>
+		</clipPath>
+    </defs>
+	<g>
+		<!-- <circle r="1" stroke-width="0" fill="#007FFF"></circle> -->
+		<!-- <circle r="2.5" stroke-width="1" stroke="#007FFF" fill="transparent"></circle> -->
+
+		<g stroke-linejoin="round" stroke-linecup="round" clip-path="url(#clippath)">
+			<path d="M-5,-3 -5,3, 5,3 5,-3 3,-3 0,-3 -1,-4 -1,-4 -4,-4 Z" fill="url(#gradient)" stroke="#FFF" stroke-width="0"/>
+			<!-- <rect x="-5" y="-5" width="10" height="10" fill="url(#gradient)"/> -->
+			<circle cx="-.5" cy="-2.5" r="5.5" stroke-width="0" fill="#0000003D"></circle>
+		</g>
+	</g>
+</svg>

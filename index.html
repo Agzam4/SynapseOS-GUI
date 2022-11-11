@@ -5,9 +5,28 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>SynapseOS GUI</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="taskpanel.css">
 	<script type="text/javascript" src="script.js"></script>
 </head>
 <body>
+	<div id="desktop">
+		<div class="file folder" x="2" y="2" name="Старая папка">
+			<svg width="100%" height="100%">       
+     			<image xlink:href="files/folder.svg" src="files/folder.svg" width="100%" height="100%"/>    
+			</svg>
+		</div>
+		<div class="file folder" x="17" y="4" name="Старая папка (2)">
+			<svg width="100%" height="100%">       
+     			<image xlink:href="files/folder.svg" src="files/folder.svg" width="100%" height="100%"/>    
+			</svg>
+		</div>
+
+		<div class="file file" x="12" y="8" name="Lorem ipsum">
+			<svg width="100%" height="100%">       
+     			<image xlink:href="files/file.svg" src="files/file.svg" width="100%" height="100%"/>    
+			</svg>
+		</div>
+	</div>
 	<div id="taskpanel" position="bottom">
 		<div id="synapse-backgroundtext">
 			SynapseOS
@@ -41,7 +60,7 @@
 					</svg>
 				</div>
 			</div>
-			<div class="taskpanel-search" contenteditable>Поиск</div>
+			<div class="taskpanel-search" contenteditable placeholder="Поиск"></div>
 		</div>
 
 

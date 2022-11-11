@@ -1,0 +1,32 @@
+<svg viewBox="-5 -5 10 10" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs>
+    	<linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+			<stop offset="0%" 	stop-color="#007FFF"/>
+			<stop offset="100%" stop-color="#FF0072"/>
+    	</linearGradient>
+
+		<clipPath id="clippath" >
+			<path fill="#FFFFFF" stroke="#000000" d="M-3,-4 -3,4, 3,4 3,-2.5 1.5,-4 Z"/>
+		</clipPath>
+
+		<clipPath id="clippath-2" >
+			<path fill="#FFFFFF" stroke="#000000" d="M-3,-4 -3,4, 3,4 3,-2.5 1.5,-2.5 1.5,-4 Z"/>
+		</clipPath>
+
+    </defs>
+	<g>
+		<!-- <circle r="1" stroke-width="0" fill="#007FFF"></circle> -->
+		<!-- <circle r="2.5" stroke-width="1" stroke="#007FFF" fill="transparent"></circle> -->
+
+		<g stroke-linejoin="round" stroke-linecup="round" clip-path="url(#clippath)">
+			<!-- <g clip-path="url(#top-right)">
+				<rect x="-5" y="-5" width="10" height="10" fill="url(#gradient)"/>
+			</g> -->
+			<path d="M-3,-4 -3,4, 3,4 3,-2.5 1.5,-4 Z" fill="url(#gradient)" stroke="#FFF" stroke-width="0"/>
+		</g>
+
+		<g stroke-linejoin="round" stroke-linecup="round" clip-path="url(#clippath-2)">
+			<circle cx="-1.5" cy="-1" r="5" stroke-width="0" fill="#0000003D"></circle>
+		</g>
+	</g>
+</svg>
